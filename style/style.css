@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    left: 0;
+    background: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/********************************************* HEADER ********************************************************/
+
+header {
+    display: flex;
+/*
+    grid-template-rows: repeat(minmax(150px, auto));
+*/
+    width: 100%;
+    height: 50px;
+    opacity: .9;
+    position: fixed;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 -5px 15px black;
+}
+
+.headerContent {
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+/************* HEADER SOCIAL LINKS *************/
+
+
+.socialLinks {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.socialLinks li {
+    padding: 5px 0 0 0;
+    
+}
+
+.socialLinks li a {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 3px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #000;
+    transition: .5s;
+}
+
+.socialLinks li a .fa {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+}
+
+.socialLinks li a:hover .fa {
+    transform: rotate(360deg);
+}
+
+.socialLinks li a:hover {
+    transition: .5s;
+}
+
+.socialLinks li:nth-child(1) a:hover {
+    background-color: #3F62A9;
+}
+
+.socialLinks li:nth-child(2) a:hover {
+    background-color: #1DA1F2;
+}
+
+.socialLinks li:nth-child(3) a:hover {
+    background-color: #5181B8;
+}
+
+.socialLinks li:nth-child(4) a:hover {
+    background-color: #D52323;
+}
+
+/************* HEADER MENU *************/
+
+.headerMenuLinks {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.headerMenuLinks li {
+    cursor: pointer;
+    width: auto;
+    height: 45px;
+    padding: 5px 10px 0 10px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0 3px;
+    position: relative;
+    transition: .5s;
+}
+
+.headerMenuLinks li:hover {
+    background: green;
+}
+
+/************* HEADER LANGUAGES *************/
+
+.languageItems {
+    display: flex;
+    margin: 8px 0 0 10px;
+}
+
+.languageItems img {
+    cursor: pointer;
+    margin: 0 5px;
+    width: 30px;
+}
+
+/********************************************* MAIN ********************************************************/
+
+main {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.feedbackInput {
+    text-align: center;
+}
+
+.feedbackInput input {
+    width: 300px;
+    height: auto;
+    margin: 10px 0 10px 10px;
+    padding: 10px 5px 10px 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 0px;
+    box-shadow: 0 0 30px white;
+    border-bottom: 1px solid black;
+}
+
+.textarea {
+    text-align: center;
+}
+
+.bottomTest {
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    background: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
