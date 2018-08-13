@@ -4,12 +4,35 @@ body {
     background: #ffffff;
 }
 
+label {
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 0 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 27%;
+    cursor: pointer;
+    display: none;
+}
+
+label:hover {
+    background: black;
+    color: white;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
 li {
     list-style: none;
 }
 
 h1 {
     text-align: center;
+}
+
+li, h1, input {
+    font-family: 'Neucha', cursive;
 }
 
 a {
@@ -21,9 +44,6 @@ a {
 
 header {
     display: flex;
-/*
-    grid-template-rows: repeat(minmax(150px, auto));
-*/
     width: 100%;
     height: 50px;
     opacity: .9;
@@ -34,22 +54,23 @@ header {
 
 .headerContent {
     display: flex;
-    width: 85%;
-    margin: auto;
+    width: 1100px;
+    margin: 0 auto;
 }
 
 /************* HEADER SOCIAL LINKS *************/
-
 
 .socialLinks {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .socialLinks li {
-    padding: 5px 0 0 0;
-    
+    padding: 0;
 }
 
 .socialLinks li a {
@@ -100,21 +121,22 @@ header {
 /************* HEADER MENU *************/
 
 .headerMenuLinks {
+    flex-grow: 2;
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerMenuLinks li {
     cursor: pointer;
-    width: auto;
     height: 45px;
     padding: 5px 10px 0 10px;
     text-align: center;
     line-height: 35px;
     font-size: 20px;
     margin: 0 3px;
-    position: relative;
     transition: .5s;
 }
 
@@ -126,7 +148,10 @@ header {
 
 .languageItems {
     display: flex;
-    margin: 8px 0 0 10px;
+    flex-grow: 1;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .languageItems img {
@@ -138,18 +163,59 @@ header {
 /********************************************* MAIN ********************************************************/
 
 main {
-    width: 85%;
+    width: 1100px;
     height: auto;
     margin: auto;
     
 }
+
+/************* LOGO *********************/
 
 .logo img {
     width: 100%;
     height: 100%;
 }
 
-.feedbackInput {
+/************* ABOUT US ******************/
+
+.aboutUs {
+    margin: 0 10px;
+}
+
+/************* LIST OF GAMES *************/
+
+.listOfGames {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 10px 10px;
+}
+
+.listOfGames div {
+    background: silver;
+    text-align: center;
+    height: 150px;
+}
+
+/*.listOfGames div span {
+    position: relative;
+    bottom: 90px;
+    color: white;
+}*/
+
+.listOfGames div:nth-child(even) {
+    background: white;
+}
+
+.listOfGames div img {
+    width: 100%;
+    height: 100%;
+}
+
+/************* FEEDBACK *****************/
+
+.feedbackInput, .textarea, .feedback .feedbackSubmit {
     text-align: center;
 }
 
@@ -164,16 +230,107 @@ main {
     border-bottom: 1px solid black;
 }
 
-.textarea {
-    text-align: center;
+.feedback .feedbackSubmit input[type=button] {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 1);
+    border: 0px;
+    color: white;
+    cursor: pointer;
 }
 
+.feedback .feedbackSubmit input[type=button], .feedbackInput input, textarea:focus {
+    outline: 0;
+}
+
+.feedback .feedbackSubmit input[type=button]:hover {
+    background: rgba(0, 0, 0, .8);
+}
+
+/************* BOTTOM *******************/
+
 .bottomTest {
-    width: 85%;
+    width: 60%;
     height: 100px;
     margin: auto;
-    background: gray;
+    background: #c9c9c9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/********************************************* MEDIA QUERIES ********************************************************/
+
+@media screen and ( max-width: 1125px ) {
+    main {
+        width: 100%;
+    }
+    
+    .socialLinks {
+        padding: 0 0 0 5px;
+    }
+    
+}
+
+@media screen and ( max-width: 768px ) {
+    
+    .listOfGames {
+        max-width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /*.socialLinks li a {
+        width: 35px;
+        height: 35px;
+        background: #fff;
+        text-align: center;
+        line-height: 35px;
+        font-size: 20px;
+        margin: 0 3px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        border: 2px solid #000;
+        transition: .5s;
+    }*/
+    
+    .headerMenuLinks li {
+        font-size: 14px;
+    }
+    
+    .languageItems img {
+        cursor: pointer;
+        margin: 0 5px;
+        width: 30px;
+    }
+    
+}
+
+@media screen and ( max-width: 668px ) {
+    
+    .socialLinks {
+        
+        justify-content:flex-start;
+    }
+    
+    .languageItems, .headerMenuLinks {
+        display: none;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    
+    
+}
+
+
+
+
+
 
 
 

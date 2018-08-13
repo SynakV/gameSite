@@ -5,6 +5,7 @@
     <title>Game Site</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -15,10 +16,10 @@
        <div class="headerContent">
           
            <ul class="socialLinks">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-vk"></i></a></li>
-               <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+               <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://vk.com/" target="_blank"><i class="fa fa-vk"></i></a></li>
+               <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
            </ul>
               
            <ul class="headerMenuLinks">
@@ -33,6 +34,9 @@
                <li><img src="img/languageIcons/ukraine.png" alt="ua"></li>
                <li><img src="img/languageIcons/united-states.png" alt="us"></li>
            </ul>
+           
+           <label for="headerMenuToggle">&#9776;</label> 
+           <input type="checkbox" id="headerMenuToggle" />
            
        </div>
        
@@ -53,7 +57,17 @@
         
         <div class="gameSlider"></div>
         
-        <div class="listOfGames"></div>
+        <div class="listOfGames" id="ourGames">
+            <div><img src="img/games/1%20(1).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(2).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(3).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(4).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(5).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(6).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(7).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(8).jpg"><!--<span>1</span>--></div>
+            <div><img src="img/games/1%20(9).jpg"><!--<span>1</span>--></div>
+        </div>
         
         <div class="feedback" id="feedback">
           
@@ -68,6 +82,10 @@
             <div class="textarea">
                 <textarea name="message" cols="60" rows="10"></textarea>
             </div>
+            
+            <div class="feedbackSubmit">
+                <input type="button" value="Submit" />
+            </div>
                         
         </div>
         
@@ -75,7 +93,8 @@
     
     <bottom>
         <div class="bottomTest">
-            
+            Copyright © 2018, All rights reserved.<br>
+            Site developed by Vaas Monty.
         </div>
     </bottom>
     
