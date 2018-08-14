@@ -19,7 +19,7 @@ label:hover {
     color: white;
 }
 
-input[type=checkbox] {
+#headerMenuToggle {
     display: none;
 }
 
@@ -187,16 +187,15 @@ main {
 .listOfGames {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-    margin: 0 auto;
+    width: 98%;
+    margin: auto;
     grid-gap: 10px 10px;
 }
 
-.listOfGames div {
+/*.listOfGames div {
     background: silver;
-    text-align: center;
     height: 150px;
-}
+}*/
 
 /*.listOfGames div span {
     position: relative;
@@ -219,10 +218,13 @@ main {
     text-align: center;
 }
 
+.feedbackInput {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .feedbackInput input {
-    width: 300px;
-    height: auto;
-    margin: 10px 0 10px 10px;
+    margin: 10px 10px;
     padding: 10px 5px 10px 10px;
     background: rgba(255, 255, 255, 0.8);
     border: 0px;
@@ -277,8 +279,7 @@ main {
 @media screen and ( max-width: 768px ) {
     
     .listOfGames {
-        max-width: 60%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
     /*.socialLinks li a {
@@ -311,7 +312,6 @@ main {
 @media screen and ( max-width: 668px ) {
     
     .socialLinks {
-        
         justify-content:flex-start;
     }
     
@@ -323,9 +323,29 @@ main {
         display: block;
     }
     
+    .listOfGames {
+        grid-template-columns: repeat(1, 1fr);
+    }
     
+    .feedbackInput {
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    textarea {
+        width: 70%;
+    }
+    
+    #headerMenuToggle:checked + .languageItems {
+        background-color: red;
+    }
     
 }
+
+/*@media screen and ( max-width: 468px ) {
+    
+}*/
 
 
 
