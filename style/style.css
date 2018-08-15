@@ -19,7 +19,7 @@ label:hover {
     color: white;
 }
 
-#headerMenuToggle {
+input[type=checkbox] {
     display: none;
 }
 
@@ -48,6 +48,7 @@ header {
     height: 50px;
     opacity: .9;
     position: fixed;
+    z-index: 1000;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 -5px 15px black;
 }
@@ -144,6 +145,11 @@ header {
     background: green;
 }
 
+.headerMenuLinks a {
+    width: auto;
+    height: auto;
+}
+
 /************* HEADER LANGUAGES *************/
 
 .languageItems {
@@ -187,15 +193,17 @@ main {
 .listOfGames {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 98%;
+    max-width: 98%;
+    height: auto;
     margin: auto;
     grid-gap: 10px 10px;
 }
 
-/*.listOfGames div {
+.listOfGames div {
     background: silver;
+    text-align: center;
     height: 150px;
-}*/
+}
 
 /*.listOfGames div span {
     position: relative;
@@ -219,12 +227,15 @@ main {
 }
 
 .feedbackInput {
+    max-width: 80%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px 10px;
 }
 
 .feedbackInput input {
-    margin: 10px 10px;
+    margin: 10px 0;
     padding: 10px 5px 10px 10px;
     background: rgba(255, 255, 255, 0.8);
     border: 0px;
@@ -279,7 +290,13 @@ main {
 @media screen and ( max-width: 768px ) {
     
     .listOfGames {
-        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+        padding: 0 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .listOfGames div {
+        height: 200px;
     }
     
     /*.socialLinks li a {
@@ -323,22 +340,14 @@ main {
         display: block;
     }
     
-    .listOfGames {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
     .feedbackInput {
-        width: 70%;
-        margin: auto;
+        max-width: 60%;
         grid-template-columns: repeat(1, 1fr);
+        margin: auto;
     }
     
     textarea {
-        width: 70%;
-    }
-    
-    #headerMenuToggle:checked + .languageItems {
-        background-color: red;
+        max-width: 300px;
     }
     
 }
