@@ -12,18 +12,20 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-   
+    
     <header>
-      
+       
        <div class="headerContent">
-          
+         <label for="headerMenuToggle">&#9776;</label>
+          <input type="checkbox" id="headerMenuToggle" />
+           
            <ul class="socialLinks">
                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
                <li><a href="http://vk.com/" target="_blank"><i class="fa fa-vk"></i></a></li>
                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
            </ul>
-              
+           
            <ul class="headerMenuLinks">
                <li href="#aboutUs">Про нас</li>
                <li href="#inDev">У розробці</li>
@@ -37,28 +39,32 @@
                <li><img src="img/languageIcons/united-states.png" alt="us"></li>
            </ul>
            
-           <label for="headerMenuToggle">&#9776;</label> 
-           <input type="checkbox" id="headerMenuToggle" />
-           
        </div>
        
     </header>
     
     <main>
-       
+        
         <div class="logo">
             <img src="img/N7.png" alt="logo">
         </div>
         
         <div class="aboutUs" id="aboutUs">
-            <h1>Про нас</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
+            
+            <div>
+                
+                <h1>Про нас</h1>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora rerum iure vero, beatae explicabo, quo sint sapiente enim ab qui placeat voluptatibus omnis quam fugiat cumque. Nesciunt repellendus, animi!</p>
+                
+            </div>
+            
         </div>
         
         <div class="gameSlider" id="inDev">
-           
+            
             <h1>У Розробці</h1>
                   
             <div class="slider">
@@ -81,17 +87,25 @@
             
         </div>
         
-        <div class="listOfGames" id="ourGames">
-            <div><img src="img/games/1%20(1).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(2).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(3).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(4).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(5).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(6).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(7).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(8).jpg"><!--<span>1</span>--></div>
-            <div><img src="img/games/1%20(9).jpg"><!--<span>1</span>--></div>
+        <div class="ourGames" id="ourGames">
+            
+            <h1>Наші Ігри</h1>
+            
+            <div class="listOfGames">
+                <div><img src="img/games/1%20(1).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(2).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(3).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(4).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(5).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(6).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(7).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(8).jpg"><!--<span>1</span>--></div>
+                <div><img src="img/games/1%20(9).jpg"><!--<span>1</span>--></div>
+            </div>
+            
         </div>
+        
+        
         
         <div class="feedback" id="feedback">
           

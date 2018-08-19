@@ -1,6 +1,7 @@
 body {
     margin: 0;
     left: 0;
+    padding: 0;
     background: #ffffff;
 }
 
@@ -12,6 +13,9 @@ label {
     border-radius: 27%;
     cursor: pointer;
     display: none;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
 }
 
 label:hover {
@@ -28,7 +32,16 @@ li {
 }
 
 h1 {
+    margin: 50px 0;
     text-align: center;
+}
+
+h1:after {
+    content: "";
+    border-bottom: 2px solid black;
+    width: 30px;
+    display: block;
+    margin: 5px auto;
 }
 
 li, h1, input {
@@ -38,6 +51,10 @@ li, h1, input {
 a {
     text-decoration: none;
     color: black;
+}
+
+p {
+    text-align: justify;
 }
 
 /********************************************* HEADER ********************************************************/
@@ -184,9 +201,22 @@ main {
 
 /************* ABOUT US ******************/
 
-.aboutUs {
+/*.aboutUs {
+    width: 99vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}*/
+
+.aboutUs, .gameSlider {
     margin: 0 10px;
 }
+
+/************* IN DEVELOPMENT ************/
+
+
 
 /************* LIST OF GAMES *************/
 
@@ -290,9 +320,8 @@ main {
 @media screen and ( max-width: 768px ) {
     
     .listOfGames {
-        max-width: 400px;
         padding: 0 10px;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .listOfGames div {
@@ -336,8 +365,33 @@ main {
         display: none;
     }
     
+    .headerMenuLinks {
+        position: absolute;
+        margin: 50px 0 0 0;
+        width: 100%;
+    }
+    
+    .headerMenuLinks li {
+        margin: 0;
+        font-size: 30px;
+        background-color: #fff;
+    }
+    
+    .languageItems {
+        position: absolute;
+        background-color: #fff;
+        margin: 250px 0 0 0;
+        padding: 5px 0;
+        width: 100%;
+    }
+    
     label {
         display: block;
+    }
+    
+    .listOfGames {
+        max-width: 400px;
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .feedbackInput {
@@ -348,6 +402,14 @@ main {
     
     textarea {
         max-width: 300px;
+    }
+    
+    input[type=checkbox]:checked ~ .headerMenuLinks {
+        display: block;
+    }
+    
+    input[type=checkbox]:checked ~ .languageItems {
+        display: flex;
     }
     
 }
