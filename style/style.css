@@ -51,10 +51,27 @@ li, h1, input {
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 p {
     text-align: justify;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 /********************************************* HEADER ********************************************************/
@@ -150,21 +167,15 @@ header {
 .headerMenuLinks li {
     cursor: pointer;
     height: 45px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 15px 0 15px;
     text-align: center;
     line-height: 35px;
     font-size: 20px;
-    margin: 0 3px;
     transition: .5s;
 }
 
 .headerMenuLinks li:hover {
-    background: green;
-}
-
-.headerMenuLinks a {
-    width: auto;
-    height: auto;
+    background: green !important;
 }
 
 /************* HEADER LANGUAGES *************/
@@ -216,7 +227,9 @@ main {
 
 /************* IN DEVELOPMENT ************/
 
-
+.gameSlider p {
+    margin: 50px 0 0 0;
+}
 
 /************* LIST OF GAMES *************/
 
@@ -230,20 +243,19 @@ main {
 }
 
 .listOfGames div {
-    background: silver;
     text-align: center;
-    height: 150px;
+    background: silver;
+    height: 180px;
+    cursor: pointer;
 }
 
 /*.listOfGames div span {
-    position: relative;
-    bottom: 90px;
     color: white;
+    position: relative;
+    bottom: 100px;
+    background: green;
+    padding: 24% 48.1% 22.5% 50%;
 }*/
-
-.listOfGames div:nth-child(even) {
-    background: white;
-}
 
 .listOfGames div img {
     width: 100%;
@@ -307,12 +319,13 @@ main {
 /********************************************* MEDIA QUERIES ********************************************************/
 
 @media screen and ( max-width: 1125px ) {
+    
     main {
         width: 100%;
     }
     
-    .socialLinks {
-        padding: 0 0 0 5px;
+    .headerMenuLinks li {
+        font-size: 18px;
     }
     
 }
@@ -344,7 +357,8 @@ main {
     }*/
     
     .headerMenuLinks li {
-        font-size: 14px;
+        font-size: 15px;
+        padding: 5px 10px 0 10px;
     }
     
     .languageItems img {

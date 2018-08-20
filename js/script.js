@@ -9,6 +9,44 @@ $(document).ready(function(){
     
     $(!("input[type=checkbox]")).click(function() {
         $("input[type=checkbox]").prop("checked", false);
-    })
+    });
+    
+    $(".headerMenuLinks li, .languageItems li, main").click(function() {
+        $("input[type=checkbox]").prop("checked", false);
+    });
+    
+    /*$(".headerMenuLinks li").click(function() {
+        $(".headerMenuLinks li").css("background", "white");
+        $(this).css("background", "green");
+    });*/
+    
+    $(window).on("scroll touchmove", function() {
+        
+        function whiteBg() {
+            $('.headerMenuLinks li').css('background', 'white');
+        }
+        whiteBg();
+        
+        if ($(document).scrollTop() >= $("#aboutUs").position().top-61) {
+            whiteBg();
+            $('.headerMenuLinks li:nth-child(1)').css('background', 'green');
+        };
 
+        if ($(document).scrollTop() > $("#inDev").position().top-61) {
+            whiteBg();
+            $('.headerMenuLinks li:nth-child(2)').css('background', 'green');
+        };
+
+        if ($(document).scrollTop() > $("#ourGames").position().top-61) {
+            whiteBg();
+            $('.headerMenuLinks li:nth-child(3)').css('background', 'green');
+        };
+        
+        if ($(document).scrollTop() > $("#feedback").position().top-61) {
+            whiteBg();
+            $('.headerMenuLinks li:nth-child(4)').css('background', 'green');
+        };
+
+    });
+    
 });

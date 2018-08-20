@@ -1,0 +1,19 @@
+@import url(../../style/style.css);
+@import url(../../style/slider.css);
+
+.slider {
+    margin: 0;
+}
+
+.backButton {
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+
+.backButton:hover {
+    transition: .3s;
+    filter: invert(0.5);
+}
