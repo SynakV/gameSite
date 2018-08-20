@@ -264,6 +264,10 @@ main {
 
 /************* FEEDBACK *****************/
 
+.feedback {
+    height: 500px;
+}
+
 .feedbackInput, .textarea, .feedback .feedbackSubmit {
     text-align: center;
 }
@@ -307,7 +311,7 @@ main {
 
 .bottomTest {
     width: 60%;
-    height: 100px;
+    height: 200px;
     margin: auto;
     background: #c9c9c9;
     text-align: center;

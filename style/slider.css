@@ -1,13 +1,11 @@
 .slider {
     width: 85%;
-    height: 500px;
     background: gray;
     margin: 0 auto;
 }
 
 .slider img {
     width: 100%;
-    height: 500px;
 }
 
 .sliderBull {
@@ -25,7 +23,6 @@
     transition: .5s;
 }
 
-
 .sliderBull li:hover {
     transition: .5s;
     color: gray;
@@ -33,5 +30,23 @@
 
 iframe {
     width: 100%;
+}
+
+iframe, .slider img, .slider {
     height: 500px;
+}
+
+@media screen and ( max-width: 768px ) {
+    iframe, .slider img, .slider {
+        height: 300px;
+    }
+}
+
+@media screen and ( max-width: 468px ) {
+    iframe, .slider img, .slider {
+        height: 200px;
+    }
+    .sliderBull {
+        font-size: 30px;
+    }
 }
