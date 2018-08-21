@@ -22,6 +22,10 @@ $(document).ready(function(){
     
     $(window).on("scroll touchmove", function() {
         
+        /*var docScrolTop = $(document).scrollTop();
+        var posTop = position().top-61;
+        var bgLink = css('background', 'green');*/
+        
         function whiteBg() {
             $('.headerMenuLinks li').css('background', 'white');
         }

@@ -1,13 +1,22 @@
 @import url(../../style/style.css);
 @import url(../../style/slider.css);
 
+.gameDescription {
+    padding: 0 7.5%;
+}
+
+h1 {
+    margin: 20px 0 30px 0;
+}
+
 iframe, .slider img, .slider {
     height: 700px;
 }
 
 .backButton {
+    position: fixed;
     cursor: pointer;
-    margin: 10px;
+    margin: 0 0 0 10px;
     width: 50px;
     height: 50px;
     transition: .3s;
@@ -16,4 +25,30 @@ iframe, .slider img, .slider {
 .backButton:hover {
     transition: .3s;
     filter: invert(0.5);
+}
+
+@media screen and ( max-width: 1125px ) {
+    iframe, .slider img, .slider {
+        height: 400px;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    iframe, .slider img, .slider {
+        height: 300px;
+    }
+    .backButton {
+        margin: 0 0 0 10px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and ( max-width: 468px ) {
+    iframe, .slider img, .slider {
+        height: 200px;
+    }
+    .sliderBull {
+        font-size: 30px;
+    }
 }
